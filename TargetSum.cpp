@@ -47,8 +47,8 @@ int TargetSum(int arr[], int n, int diff)
 }
 
 int main() {
-    int n=1,diff=2;
-    int arr[n] = {1};
+    int n=4,diff=1;
+    int arr[n] = {1, 1, 2, 3};
     cout<<TargetSum(arr, n, diff);
 }
 
