@@ -34,5 +34,5 @@ int main() {
     string Y = "GXTXAYB";
     int n = X.size();
     int m = Y.size();
-    cout<<"Length of Lowest Common Subsequence is "<<LongestCommonSubsequenceTopDown(X, Y, n, m)<<endl;
+    cout<<"Length of Longest Common Subsequence is "<<LongestCommonSubsequenceTopDown(X, Y, n, m)<<endl;
 }
