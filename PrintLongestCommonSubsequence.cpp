@@ -3,7 +3,6 @@ using namespace std;
 
 string PrintLongestCommonSubsequence(string X, string Y, int n, int m)
 {
-    int result = 0;
     int dp[n+1][m+1];
     for(int i=0;i<n+1;i++)
     {
@@ -22,7 +21,6 @@ string PrintLongestCommonSubsequence(string X, string Y, int n, int m)
             if(X[i-1] == Y[j-1])
             {
                 dp[i][j] = 1+ dp[i-1][j-1];
-                result = max(result,dp[i][j]);
             } else {
                 dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
             }
